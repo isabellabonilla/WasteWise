@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import './AppSidebarNav.css' 
 
 import SimpleBar from 'simplebar-react'
 import 'simplebar-react/dist/simplebar.min.css'
@@ -9,16 +10,19 @@ import { CBadge, CNavLink, CSidebarNav } from '@coreui/react'
 
 export const AppSidebarNav = ({ items }) => {
   const navLink = (name, icon, badge, indent = false) => {
+    const linkStyle = { color: '#8B4513' }  // Brown color for text
+    const iconStyle = { color: '#8B4513', marginRight: '10px' }  // Brown color for icon with margin
+
     return (
       <>
-        {icon
+        {icon 
           ? icon
           : indent && (
-              <span className="nav-icon">
-                <span className="nav-icon-bullet"></span>
-              </span>
-            )}
-        {name && name}
+            <span className="nav-icon">
+              <span className="nav-icon-bullet"></span>
+            </span>
+        )}
+        {name && <span style={linkStyle}>{name}</span>}
         {badge && (
           <CBadge color={badge.color} className="ms-auto" size="sm">
             {badge.text}
@@ -29,15 +33,16 @@ export const AppSidebarNav = ({ items }) => {
   }
 
   const navItem = (item, index, indent = false) => {
-    const { component, name, badge, icon, ...rest } = item
+    const { component, name, badge, icon, to, ...rest } = item
     const Component = component
     return (
       <Component as="div" key={index}>
-        {rest.to || rest.href ? (
+        {to || rest.href ? (
           <CNavLink
             {...(rest.to && { as: NavLink })}
             {...(rest.href && { target: '_blank', rel: 'noopener noreferrer' })}
             {...rest}
+            className="nav-link"
           >
             {navLink(name, icon, badge, indent)}
           </CNavLink>

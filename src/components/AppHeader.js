@@ -43,41 +43,30 @@ const AppHeader = () => {
   }, [])
 
   return (
-    <CHeader position="sticky" className="mb-4 p-0" ref={headerRef}>
+    <CHeader position="sticky" className="mb-4 p-0" ref={headerRef} style={{ backgroundColor: '#e6ded7'}}>
       <CContainer className="border-bottom px-4" fluid>
         <CHeaderToggler
           onClick={() => dispatch({ type: 'set', sidebarShow: !sidebarShow })}
-          style={{ marginInlineStart: '-14px' }}
+          style={{ marginInlineStart: '-14px'}} // Toggler button color
         >
-          <CIcon icon={cilMenu} size="lg" />
+          <CIcon icon={cilMenu} size="lg" style={{ color: '#61564d' }} />
         </CHeaderToggler>
         <CHeaderNav className="d-none d-md-flex">
           <CNavItem>
-            <CNavLink to="/dashboard" as={NavLink}>
+            <CNavLink to="/dashboard" as={NavLink} href="#" style={{ color: '#61564d' }}> {/* Nav link color */}
               Dashboard
             </CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink href="#">Users</CNavLink>
-          </CNavItem>
-          <CNavItem>
-            <CNavLink href="#">Settings</CNavLink>
-          </CNavItem>
+          <CNavLink to="/compostrecipes" as={NavLink} href="#" style={{ color: '#61564d' }}> {/* Nav link color */}
+              Compost Cuisine
+            </CNavLink>
+            </CNavItem>
         </CHeaderNav>
         <CHeaderNav className="ms-auto">
           <CNavItem>
-            <CNavLink href="#">
-              <CIcon icon={cilBell} size="lg" />
-            </CNavLink>
-          </CNavItem>
-          <CNavItem>
-            <CNavLink href="#">
-              <CIcon icon={cilList} size="lg" />
-            </CNavLink>
-          </CNavItem>
-          <CNavItem>
-            <CNavLink href="#">
-              <CIcon icon={cilEnvelopeOpen} size="lg" />
+            <CNavLink href="#" style={{ color: '#61564d' }}>
+              <CIcon icon={cilBell} size="lg" style={{ color: '#61564d' }} />
             </CNavLink>
           </CNavItem>
         </CHeaderNav>
@@ -86,7 +75,7 @@ const AppHeader = () => {
             <div className="vr h-100 mx-2 text-body text-opacity-75"></div>
           </li>
           <CDropdown variant="nav-item" placement="bottom-end">
-            <CDropdownToggle caret={false}>
+            <CDropdownToggle caret={false} style={{ color: '#61564d' }}>
               {colorMode === 'dark' ? (
                 <CIcon icon={cilMoon} size="lg" />
               ) : colorMode === 'auto' ? (
@@ -102,6 +91,7 @@ const AppHeader = () => {
                 as="button"
                 type="button"
                 onClick={() => setColorMode('light')}
+                style={{ color: '#61564d' }} // Dropdown item color
               >
                 <CIcon className="me-2" icon={cilSun} size="lg" /> Light
               </CDropdownItem>
@@ -111,6 +101,7 @@ const AppHeader = () => {
                 as="button"
                 type="button"
                 onClick={() => setColorMode('dark')}
+                style={{ color: '#61564d' }} // Dropdown item color
               >
                 <CIcon className="me-2" icon={cilMoon} size="lg" /> Dark
               </CDropdownItem>
@@ -120,6 +111,7 @@ const AppHeader = () => {
                 as="button"
                 type="button"
                 onClick={() => setColorMode('auto')}
+                style={{ color: '#61564d' }} // Dropdown item color
               >
                 <CIcon className="me-2" icon={cilContrast} size="lg" /> Auto
               </CDropdownItem>

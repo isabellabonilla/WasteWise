@@ -1,0 +1,18 @@
+/* Hover effect for all nav links */
+.nav-link:hover:not(.active) {
+    background-color: #cec4bb;  /* Hover background color */
+    color: #e6ded7;  /* Hover text color */
+}
+  .nav-link.active {
+    background-color: #cec4bb; /* Active background color */
+    color: #61564d; /* Active text color */
+  }
+  
+  /* Active icon color */
+  .nav-link.active .nav-icon {
+    color: #61564d; /* Icon color when the link is active */
+  }
+
+  .custom-border {
+    border-color: #ff6347; /* Set your desired border color here */
+  }
