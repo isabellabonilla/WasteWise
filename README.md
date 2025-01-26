@@ -1,4 +1,5 @@
 # WasteWise
+### Collaborators: Jackie Jurado, Karla Tran, Isabella Bonilla
 
 ### Arduino Sensor Dashboard
 
