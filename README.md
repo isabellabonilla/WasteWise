@@ -7,12 +7,12 @@
 
 ![image](https://github.com/user-attachments/assets/8bf20559-4117-4175-ab98-8da6006a8bcf)
 
-<img width="527" alt="image" src="https://github.com/user-attachments/assets/e6a8523e-3316-4174-97cc-d1f78689e566" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/e6a8523e-3316-4174-97cc-d1f78689e566" />
 
 ### Description
 This project is a real-time dashboard that displays temperature and moisture data from an Arduino sensor. It features a React frontend with CoreUI components and a Node.js backend for communication with the Arduino via a serial connection and WebSocket for real-time updates.
 
-<img width="800" alt="image" src="https://github.com/user-attachments/assets/d4af55f8-5a93-4465-93a2-dc499ed8718b" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/d4af55f8-5a93-4465-93a2-dc499ed8718b" />
 
 ### Features
 * Real-Time Data Visualization: Displays live temperature and moisture readings using dynamic and interactive charts for a clear and detailed view of sensor performance.
