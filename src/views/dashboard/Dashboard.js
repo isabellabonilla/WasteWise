@@ -177,17 +177,21 @@ const Dashboard = () => {
 
   return (
     <>
-      <WidgetsDropdown className="mb-4" style={{ backgroundColor: '#b7b8a5'}}/>
+      <WidgetsDropdown className="mb-4" style={{ backgroundColor: '#b7b8a5' }} />
       <CCard className="mb-4" style={{ backgroundColor: '#b7b8a5', border: 'none' }}>
         <CCardBody>
           <CRow>
             <CCol sm={7}>
-              <h2 id="Compost Sensor Data" className="card-title mb-0" style={{ backgroundColor: '#b7b8a5', color: '#f7eee5' }}>
+              <h2
+                id="Compost Sensor Data"
+                className="card-title mb-0"
+                style={{ backgroundColor: '#b7b8a5', color: '#f7eee5' }}
+              >
                 Real-Time Compost Data
               </h2>
               {/* <div className="small text-body-secondary">January - July 2023</div> */}
             </CCol>
-            <CCol sm={7} className="d-none d-md-block" style={{ backgroundColor: '#b7b8a5'}}>
+            <CCol sm={7} className="d-none d-md-block" style={{ backgroundColor: '#b7b8a5' }}>
               {/* <CButton color="primary" className="float-end">
                 <CIcon icon={cilCloudDownload} />
               </CButton> */}
@@ -205,8 +209,8 @@ const Dashboard = () => {
               </CButtonGroup> */}
             </CCol>
           </CRow>
-          <div> 
-            <SensorChart/>
+          <div>
+            <SensorChart />
           </div>
         </CCardBody>
         <CCardFooter>
@@ -242,14 +246,14 @@ const Dashboard = () => {
             <CCardBody>
               <CRow>
                 <CCol xs={12} md={6} xl={6}> */}
-                  {/* <CRow> */}
-                    {/* <CCol xs={6}>
+      {/* <CRow> */}
+      {/* <CCol xs={6}>
                       <div className="border-start border-start-4 border-start-info py-1 px-3">
                         <div className="text-body-secondary text-truncate small">New Clients</div>
                         <div className="fs-5 fw-semibold">9,123</div>
                       </div>
                 //     </CCol> */}
-                {/* //     <CCol xs={6}>
+      {/* //     <CCol xs={6}>
                 //       <div className="border-start border-start-4 border-start-danger py-1 px-3 mb-3">
                 //         <div className="text-body-secondary text-truncate small">
                 //           Recurring Clients
@@ -260,7 +264,7 @@ const Dashboard = () => {
                 //   </CRow>
                 //   <hr className="mt-0" />
                 //   {progressGroupExample1.map((item, index) => ( */}
-                {/* //     <div className="progress-group mb-4" key={index}>
+      {/* //     <div className="progress-group mb-4" key={index}>
                 //       <div className="progress-group-prepend">
                 //         <span className="text-body-secondary small">{item.title}</span>
                 //       </div>
@@ -272,22 +276,22 @@ const Dashboard = () => {
                 //   ))}
                 // </CCol>
                 // <CCol xs={12} md={6} xl={6}> */}
-                   {/* <CRow>
+      {/* <CRow>
                     {/* <CCol xs={6}>
                       <div className="border-start border-start-4 border-start-warning py-1 px-3 mb-3">
                         <div className="text-body-secondary text-truncate small">Pageviews</div>
                         <div className="fs-5 fw-semibold">78,623</div>
                       </div>
                     </CCol> */}
-                    {/* <CCol xs={6}>
+      {/* <CCol xs={6}>
                       <div className="border-start border-start-4 border-start-success py-1 px-3 mb-3">
                         <div className="text-body-secondary text-truncate small">Organic</div>
                         <div className="fs-5 fw-semibold">49,123</div>
                       </div>
                     </CCol> */}
-                  {/* </CRow> */}
+      {/* </CRow> */}
 
-                  {/* <hr className="mt-0" />
+      {/* <hr className="mt-0" />
 
                   {progressGroupExample2.map((item, index) => (
                     <div className="progress-group mb-4" key={index}>
@@ -321,7 +325,7 @@ const Dashboard = () => {
                   ))}
                 </CCol>
               </CRow> */}
-{/* 
+      {/* 
               <br />
 
               <CTable align="middle" className="mb-0 border" hover responsive>
