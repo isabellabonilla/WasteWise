@@ -1,6 +1,4 @@
 import React from 'react'
-import classNames from 'classnames'
-import SensorChart from './SensorChart'
 
 import {
   CAvatar,
@@ -53,7 +51,7 @@ import avatar6 from 'src/assets/images/avatars/6.jpg'
 
 import WidgetsBrand from '../widgets/WidgetsBrand'
 import WidgetsDropdown from '../widgets/WidgetsDropdown'
-import MainChart from './MainChart'
+import SensorChart from './SensorChart'
 
 const Dashboard = () => {
   const progressExample = [
@@ -179,35 +177,41 @@ const Dashboard = () => {
 
   return (
     <>
-      <WidgetsDropdown className="mb-4" style={{ backgroundColor: '#b97857' }} />
-      <CCard className="mb-4" style={{ backgroundColor: '#b7b8a5' }}>
+      <WidgetsDropdown className="mb-4" style={{ backgroundColor: '#b7b8a5' }} />
+      <CCard className="mb-4" style={{ backgroundColor: '#b7b8a5', border: 'none' }}>
         <CCardBody>
           <CRow>
-            <CCol sm={5}>
-              <h4 id="traffic" className="card-title mb-0">
-                Traffic
-              </h4>
-              <div className="small text-body-secondary">January - July 2023</div>
+            <CCol sm={7}>
+              <h2
+                id="Compost Sensor Data"
+                className="card-title mb-0"
+                style={{ backgroundColor: '#b7b8a5', color: '#f7eee5' }}
+              >
+                Real-Time Compost Data
+              </h2>
+              {/* <div className="small text-body-secondary">January - July 2023</div> */}
             </CCol>
-            <CCol sm={7} className="d-none d-md-block">
-              <CButton color="primary" className="float-end">
+            <CCol sm={7} className="d-none d-md-block" style={{ backgroundColor: '#b7b8a5' }}>
+              {/* <CButton color="primary" className="float-end">
                 <CIcon icon={cilCloudDownload} />
-              </CButton>
-              <CButtonGroup className="float-end me-3">
-                {['Day', 'Month', 'Year'].map((value) => (
+              </CButton> */}
+              {/* <CButtonGroup className="float-end me-3">
+                {['History'].map((value) => (
                   <CButton
                     color="outline-secondary"
                     key={value}
                     className="mx-0"
-                    active={value === 'Month'}
+                    active={value === 'History'}
                   >
                     {value}
                   </CButton>
                 ))}
-              </CButtonGroup>
+              </CButtonGroup> */}
             </CCol>
           </CRow>
-          <SensorChart />
+          <div>
+            <SensorChart />
+          </div>
         </CCardBody>
         <CCardFooter>
           {/* <CRow

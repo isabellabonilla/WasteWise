@@ -28,7 +28,7 @@ const Charts = () => {
                 datasets: [
                   {
                     label: 'GitHub Commits',
-                    backgroundColor: '#f87979',
+                    backgroundColor: '#b7b8a5',
                     data: [40, 20, 12, 39, 10, 40, 39, 80, 40],
                   },
                 ],
@@ -50,17 +50,17 @@ const Charts = () => {
                 datasets: [
                   {
                     label: 'My First dataset',
-                    backgroundColor: 'rgba(220, 220, 220, 0.2)',
+                    backgroundColor: '#b7b8a5',
                     borderColor: 'rgba(220, 220, 220, 1)',
-                    pointBackgroundColor: 'rgba(220, 220, 220, 1)',
+                    pointBackgroundColor: '#b7b8a5',
                     pointBorderColor: '#fff',
                     data: [random(), random(), random(), random(), random(), random(), random()],
                   },
                   {
                     label: 'My Second dataset',
-                    backgroundColor: 'rgba(151, 187, 205, 0.2)',
+                    backgroundColor: '#b7b8a5',
                     borderColor: 'rgba(151, 187, 205, 1)',
-                    pointBackgroundColor: 'rgba(151, 187, 205, 1)',
+                    pointBackgroundColor: '#b7b8a5',
                     pointBorderColor: '#fff',
                     data: [random(), random(), random(), random(), random(), random(), random()],
                   },
