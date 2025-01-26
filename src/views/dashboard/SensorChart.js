@@ -40,9 +40,8 @@ const SensorChart = () => {
   }, [updateChartData])
 
   return (
-    <CCard>
-      <CCardHeader>Sensor Data</CCardHeader>
-      <CCardBody>
+    <CCard style={{ border: 'none' }}>
+      <CCardBody className="custom-chart-container">
         <CChart
           type="line"
           data={{
@@ -52,13 +51,20 @@ const SensorChart = () => {
                 label: 'Temperature (°F)',
                 data: chartData.temperature,
                 borderColor: 'rgb(255, 99, 132)',
+                backgroundColor: 'rgba(255, 99, 132, 1)',
                 yAxisID: 'y-temperature',
+                color: '#d3d3d3'
               },
               {
                 label: 'Moisture',
                 data: chartData.moisture,
                 borderColor: 'rgb(54, 162, 235)',
+                backgroundColor: 'rgba(54, 162, 235, 1)',
                 yAxisID: 'y-moisture',
+                grid: {
+                  color: '#d3d3d3', // Set color of grid lines (light grey)
+                  lineWidth: 1, // Set line width
+                },
               },
             ],
           }}
@@ -80,6 +86,20 @@ const SensorChart = () => {
                 title: {
                   display: true,
                   text: 'Temperature (°F)',
+                  color: '#f7eee5', // Set title font color to white
+                  font: {
+                    size: 16, // Set title font size (adjust as needed)
+                  },
+                },
+                ticks: {
+                  color: '#f7eee5', // Set axis tick labels color to white
+                  font: {
+                    size: 16, // Set title font size (adjust as needed)
+                  },
+                },
+                grid: {
+                  color: '#d3d3d3', // Set color of grid lines (light grey)
+                  lineWidth: 1, // Set line width
                 },
               },
               'y-moisture': {
@@ -88,8 +108,69 @@ const SensorChart = () => {
                 title: {
                   display: true,
                   text: 'Moisture',
+                  color: '#f7eee5', // Set title font color to white
+                  font: {
+                    size: 16, // Set title font size (adjust as needed)
+                  },
+                },
+                ticks: {
+                  color: '#f7eee5', // Set axis tick labels color to white
+                  font: {
+                    size: 16, // Set title font size (adjust as needed)
+                  },
+                },
+                grid: {
+                  color: '#d3d3d3', // Set color of grid lines (light grey)
+                  lineWidth: 1, // Set line width
                 },
               },
+              x: {
+                title: {
+                  display: true,
+                  text: 'Time',
+                  color: '#f7eee5', // Set title font color to white
+                  font: {
+                    size: 16, // Set title font size (adjust as needed)
+                  },
+                },
+                ticks: {
+                  color: '#f7eee5', // Set axis tick labels color to white
+                  font: {
+                    size: 16, // Set title font size (adjust as needed)
+                  },
+                },
+              },
+            },
+            plugins: {
+              tooltip: {
+                backgroundColor: 'rgba(0,0,0,0.7)', // Optional: Tooltip background color
+              },
+              legend: {
+                position: 'top',
+                labels: {
+                  font: {
+                    size: 16, // Set the font size of legend labels (increase this value to make font larger)
+                  },
+                  color: '#f7eee5', // Set the color of the legend labels
+                  padding: 20, // Increase the space between legend items (adjust the value as needed)
+                },
+              },
+            },
+            layout: {
+              padding: {
+                top: 20, // Add more space at the top to accommodate the legend (adjust as needed)
+                bottom: 20,
+                left: 20,
+                right: 20,
+              },
+            },
+            elements: {
+              line: {
+                tension: 0.4, // Adjust line tension for smoother curves
+              },
+            },
+            chartArea: {
+              backgroundColor: '#e6ded7', // Change this to your preferred color
             },
           }}
         />

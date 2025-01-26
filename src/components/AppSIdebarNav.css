@@ -12,7 +12,3 @@
   .nav-link.active .nav-icon {
     color: #61564d; /* Icon color when the link is active */
   }
-
-  .custom-border {
-    border-color: #ff6347; /* Set your desired border color here */
-  }
