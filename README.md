@@ -7,11 +7,10 @@
 
 ![image](https://github.com/user-attachments/assets/8bf20559-4117-4175-ab98-8da6006a8bcf)
 
-<img width="861" alt="image" src="https://github.com/user-attachments/assets/d4af55f8-5a93-4465-93a2-dc499ed8718b" />
-
-
 ### Description
 This project is a real-time dashboard that displays temperature and moisture data from an Arduino sensor. It features a React frontend with CoreUI components and a Node.js backend for communication with the Arduino via a serial connection and WebSocket for real-time updates.
+
+<img width="861" alt="image" src="https://github.com/user-attachments/assets/d4af55f8-5a93-4465-93a2-dc499ed8718b" />
 
 ### Features
 * Real-Time Data Visualization: Displays live temperature and moisture readings using dynamic and interactive charts for a clear and detailed view of sensor performance.
@@ -76,6 +75,20 @@ Creators of CoreUI:
 * GitHub
 * Twitter
 * Open Collective
+
+### Resources
+* https://stackoverflow.com/questions/57011328/arduino-read-serial-monitor-with-nodejs-and-output-in-react-web-page
+* https://github.com/codeadamca/arduino-to-nodejs/blob/main/README.md
+* https://stackoverflow.com/questions/66050092/how-to-add-a-new-file-to-an-existing-repository-using-vs-code
+* https://stackoverflow.com/questions/70179711/reading-arduino-data-using-websocket-with-html-nodejs
+* https://forum.arduino.cc/t/control-arduino-with-web-browser-html-websockets-and-node-js/93405
+* https://www.youtube.com/watch?v=hFBFju_ZSYs
+* https://gist.ly/youtube-summarizer/node-js-application-communication-arduino-react-and-websockets
+* https://medium.com/@machadogj/arduino-and-node-js-via-serial-port-bcf9691fab6a
+* https://www.youtube.com/watch?v=gQYsUjT-IBo
+* https://forum.arduino.cc/t/control-arduino-with-web-browser-html-websockets-and-node-js/93405
+* https://www.geeksforgeeks.org/what-is-web-socket-and-how-it-is-different-from-the-http/
+* https://yedianyang.medium.com/how-to-send-data-to-a-web-page-from-arduino-serial-port-7aef849ccdd6
 
 ## Quick Start
 - [Download the latest release](https://github.com/coreui/coreui-free-react-admin-template/archive/refs/heads/main.zip)
