@@ -1,5 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
+import SensorChart from './SensorChart'
 
 import {
   CAvatar,
@@ -206,7 +207,7 @@ const Dashboard = () => {
               </CButtonGroup>
             </CCol>
           </CRow>
-          <MainChart />
+          <SensorChart />
         </CCardBody>
         <CCardFooter>
           {/* <CRow

@@ -3,6 +3,7 @@ import CIcon from '@coreui/icons-react'
 import {
   cilBell,
   cilCalculator,
+  cilChartLine,
   cilChartPie,
   cilCursor,
   cilDescription,
@@ -60,3 +61,4 @@ const _nav = [
 ];
 
 export default _nav
+
