@@ -36,7 +36,7 @@ const AppSidebar = () => {
           dispatch({ type: 'set', sidebarShow: visible })
         }}
       >
-        <CSidebarHeader className="border-bottom" style={{ color: '#f7eee5', borderColor: '#D2B48' }}>
+        <CSidebarHeader className="border-bottom" style={{ color: '#f7eee5', borderColor: '#f7eee5' }}>
           <CSidebarBrand to="/">
             <img src={logoImage} alt="Logo" style={{ height: '45px', width: 'auto' }}/>
           </CSidebarBrand>
