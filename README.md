@@ -22,44 +22,44 @@ This project is a real-time dashboard that displays temperature and moisture dat
 * Arduino Integration: Designed to work seamlessly with Arduino-based hardware for real-world environmental monitoring
 
 ### Prerequisites
-Node.js (v14 or later)
-npm (v6 or later)
-Arduino IDE
-Compatible Arduino board with temperature and soil moisture sensors
+* Node.js (v14 or later)
+* npm (v6 or later)
+* Arduino IDE
+* Compatible Arduino board with temperature and soil moisture sensors
 
 ### Installation
-Clone the repository:
+* Clone the repository:
 git clone https://github.com/yourusername/arduino-sensor-dashboard.git
-Navigate to the project directory:
+* Navigate to the project directory:
 cd arduino-sensor-dashboard
 npm install
-Upload the Arduino sketch to your board:
-Locate the sketch file: arduino/sensor_sketch.ino
-Use the Arduino IDE to upload it.
-Update the serial port in arduino.js to match your Arduino's port.
+* Upload the Arduino sketch to your board:
+* Locate the sketch file: arduino/sensor_sketch.ino
+* Use the Arduino IDE to upload it.
+* Update the serial port in arduino.js to match your Arduino's port.
 
 ### Usage
-Start the backend server:
+* Start the backend server:
 node arduino.js
-In a new terminal, start the React development server:
+* In a new terminal, start the React development server:
 npm start
-Open your browser and navigate to http://localhost:3000 to view the dashboard.
+* Open your browser and navigate to http://localhost:3000 to view the dashboard.
 
 ### Project Structure
-src/: React frontend code
-views/Dashboard.js: Main dashboard component
-components/SensorChart.js: Chart component for sensor data
-components/AlertComponent.js: Alert component for sensor thresholds
-arduino.js: Node.js backend for Arduino communication
-arduino/: Arduino sketches and related files
+* src/: React frontend code
+* views/Dashboard.js: Main dashboard component
+* components/SensorChart.js: Chart component for sensor data
+* components/AlertComponent.js: Alert component for sensor thresholds
+* arduino.js: Node.js backend for Arduino communication
+* arduino/: Arduino sketches and related files
 
 ### Contributing
-Contributions are welcome! If you'd like to contribute:
-Fork the repository.
-Create a new branch (git checkout -b feature/your-feature).
-Commit your changes (git commit -m 'Add your feature').
-Push to the branch (git push origin feature/your-feature).
-Submit a Pull Request.
+* Contributions are welcome! If you'd like to contribute:
+* Fork the repository.
+* Create a new branch (git checkout -b feature/your-feature).
+* Commit your changes (git commit -m 'Add your feature').
+* Push to the branch (git push origin feature/your-feature).
+8 Submit a Pull Request.
 
 ### License
 This project is licensed under the MIT License - see the below for some of their documentation and LICENSE file for details.
@@ -67,12 +67,12 @@ This project is licensed under the MIT License - see the below for some of their
 ### Acknowledgments
 This project utilizes the CoreUI Free React Admin Template, which provides a robust foundation for building responsive web applications.
 Creators of CoreUI:
-Łukasz Holeczek (GitHub, Twitter)
-Andrzej Kopański (GitHub)
-CoreUI Team:
-GitHub
-Twitter
-Open Collective
+* Łukasz Holeczek (GitHub, Twitter)
+* Andrzej Kopański (GitHub)
+* CoreUI Team:
+* GitHub
+* Twitter
+* Open Collective
 
 ## Quick Start
 - [Download the latest release](https://github.com/coreui/coreui-free-react-admin-template/archive/refs/heads/main.zip)
