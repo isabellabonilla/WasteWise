@@ -11,10 +11,15 @@ This project is a real-time dashboard that displays temperature and moisture dat
 <img width="861" alt="image" src="https://github.com/user-attachments/assets/d4af55f8-5a93-4465-93a2-dc499ed8718b" />
 
 ### Features
-Real-time temperature and moisture data visualization
-Alert system for extreme temperature and moisture levels
-Responsive design using CoreUI components
-WebSocket communication for live updates
+Real-Time Data Visualization: Displays live temperature and moisture readings using dynamic and interactive charts for a clear and detailed view of sensor performance.
+Alert System: Automatically triggers alerts for extreme temperature or moisture levels, helping users take timely action.
+Responsive Design: Built with CoreUI components to ensure an optimal user experience on desktops, tablets, and mobile devices.
+WebSocket Communication: Enables seamless, low-latency updates between the Arduino and the dashboard.
+Data History: Stores historical sensor data for trends analysis and performance monitoring.
+Customizable Thresholds: Allows users to set specific alert thresholds for both temperature and moisture to suit individual needs.
+User-Friendly Interface: Provides an intuitive and clean design, making it accessible even for non-technical users.
+Multi-Sensor Support: Capable of displaying data from multiple sensors simultaneously.
+Arduino Integration: Designed to work seamlessly with Arduino-based hardware for real-world environmental monitoring
 
 ### Prerequisites
 Node.js (v14 or later)
@@ -94,28 +99,3 @@ $ yarn start
 ```
 Navigate to [http://localhost:3000](http://localhost:3000). The app will automatically reload if you change any of the source files.
 
-## What's included
-Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
-coreui-free-react-admin-template
-├── public/          # static files
-│   ├── favicon.ico
-│   └── manifest.json
-│
-├── src/             # project root
-│   ├── assets/      # images, icons, etc.
-│   ├── components/  # common components - header, footer, sidebar, etc.
-│   ├── layouts/     # layout containers
-│   ├── scss/        # scss styles
-│   ├── views/       # application views
-│   ├── _nav.js      # sidebar navigation config
-│   ├── App.js
-│   ├── index.js
-│   ├── routes.js    # routes config
-│   └── store.js     # template state example 
-│
-├── index.html       # html template
-├── ...
-├── package.json
-├── ...
-└── vite.config.mjs  # vite config
-```
