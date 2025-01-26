@@ -58,7 +58,7 @@ const AppHeader = () => {
             </CNavLink>
           </CNavItem>
           <CNavItem>
-          <CNavLink to="/compostrecipes" as={NavLink} href="#" style={{ color: '#61564d' }}> {/* Nav link color */}
+          <CNavLink to="/compost-cuisine" as={NavLink} href="#" style={{ color: '#61564d' }}> {/* Nav link color */}
               Compost Cuisine
             </CNavLink>
             </CNavItem>
