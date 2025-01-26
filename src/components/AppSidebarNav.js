@@ -10,8 +10,8 @@ import { CBadge, CNavLink, CSidebarNav } from '@coreui/react'
 
 export const AppSidebarNav = ({ items }) => {
   const navLink = (name, icon, badge, indent = false) => {
-    const linkStyle = { color: '#8B4513' }  // Brown color for text
-    const iconStyle = { color: '#8B4513', marginRight: '10px' }  // Brown color for icon with margin
+    const linkStyle = { color: '#61564d' }  // Brown color for text
+    const iconStyle = { color: '#61564d', marginRight: '10px' }  // Brown color for icon with margin
 
     return (
       <>
@@ -37,18 +37,18 @@ export const AppSidebarNav = ({ items }) => {
     const Component = component
     return (
       <Component as="div" key={index}>
-        {to || rest.href ? (
-          <CNavLink
-            {...(rest.to && { as: NavLink })}
-            {...(rest.href && { target: '_blank', rel: 'noopener noreferrer' })}
-            {...rest}
-            className="nav-link"
-          >
-            {navLink(name, icon, badge, indent)}
-          </CNavLink>
-        ) : (
-          navLink(name, icon, badge, indent)
-        )}
+        {to ? (
+        <CNavLink
+          {...(to && { as: NavLink })}
+          {...rest}
+          className="nav-link"
+          to={to}  // Ensure `to` prop is passed to `NavLink`
+        >
+          {navLink(name, icon, badge, indent)}
+        </CNavLink>
+      ) : (
+        navLink(name, icon, badge, indent)
+      )}
       </Component>
     )
   }

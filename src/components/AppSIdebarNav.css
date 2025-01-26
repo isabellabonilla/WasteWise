@@ -4,11 +4,11 @@
     color: #e6ded7;  /* Hover text color */
 }
   .nav-link.active {
-    background-color: #cec4bb; /* Active background color */
-    color: #61564d; /* Active text color */
+    background-color: #b7b8a5 !important; /* Active background color */
+    color: #e6ded7 !important; /* Active text color */
   }
   
   /* Active icon color */
   .nav-link.active .nav-icon {
-    color: #61564d; /* Icon color when the link is active */
+    color: #e6ded7; /* Icon color when the link is active */
   }
