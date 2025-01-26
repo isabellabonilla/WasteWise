@@ -11,15 +11,15 @@ This project is a real-time dashboard that displays temperature and moisture dat
 <img width="861" alt="image" src="https://github.com/user-attachments/assets/d4af55f8-5a93-4465-93a2-dc499ed8718b" />
 
 ### Features
-*Real-Time Data Visualization: Displays live temperature and moisture readings using dynamic and interactive charts for a clear and detailed view of sensor performance.
-*Alert System: Automatically triggers alerts for extreme temperature or moisture levels, helping users take timely action.
-*Responsive Design: Built with CoreUI components to ensure an optimal user experience on desktops, tablets, and mobile devices.
-*WebSocket Communication: Enables seamless, low-latency updates between the Arduino and the dashboard.
-*Data History: Stores historical sensor data for trends analysis and performance monitoring.
-*Customizable Thresholds: Allows users to set specific alert thresholds for both temperature and moisture to suit individual needs.
-*User-Friendly Interface: Provides an intuitive and clean design, making it accessible even for non-technical users.
-*Multi-Sensor Support: Capable of displaying data from multiple sensors simultaneously.
-*Arduino Integration: Designed to work seamlessly with Arduino-based hardware for real-world environmental monitoring
+* Real-Time Data Visualization: Displays live temperature and moisture readings using dynamic and interactive charts for a clear and detailed view of sensor performance.
+* Alert System: Automatically triggers alerts for extreme temperature or moisture levels, helping users take timely action.
+* Responsive Design: Built with CoreUI components to ensure an optimal user experience on desktops, tablets, and mobile devices.
+* WebSocket Communication: Enables seamless, low-latency updates between the Arduino and the dashboard.
+* Data History: Stores historical sensor data for trends analysis and performance monitoring.
+* Customizable Thresholds: Allows users to set specific alert thresholds for both temperature and moisture to suit individual needs.
+* User-Friendly Interface: Provides an intuitive and clean design, making it accessible even for non-technical users.
+* Multi-Sensor Support: Capable of displaying data from multiple sensors simultaneously.
+* Arduino Integration: Designed to work seamlessly with Arduino-based hardware for real-world environmental monitoring
 
 ### Prerequisites
 Node.js (v14 or later)
