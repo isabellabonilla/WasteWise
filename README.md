@@ -3,7 +3,7 @@
 
 ### Arduino Sensor Dashboard
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/82ec7840-d1de-4bea-9a50-8b01b1ed76c0" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/82ec7840-d1de-4bea-9a50-8b01b1ed76c0" />
 
 ![image](https://github.com/user-attachments/assets/8bf20559-4117-4175-ab98-8da6006a8bcf)
 
